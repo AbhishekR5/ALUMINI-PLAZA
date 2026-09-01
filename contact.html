@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ALUMINI PLAZA | Aluminium & Architectural Solutions</title>
+    <meta name="description" content="Contact ALUMINI PLAZA for aluminium profiles, architectural systems, panels, interior solutions and project requirements.">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="contact-page-body">
+    <!-- Existing Site Header -->
+    <header class="site-header">
+        <div class="logo-section">
+            <a href="index.html" class="logo-link">
+                <img src="alumini plaza logo.png" alt="Alumini Plaza Logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-text" style="display: none;">ALUMINI PLAZA</span>
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">PRODUCTS <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products/ap-extrusions.html">AP Extrusions</a>
+                        <a href="products/ap-decors-panels.html">AP Decors & Panels</a>
+                        <a href="products/ap-aluminium.html">AP Aluminium</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="gallery.html" class="nav-link">GALLERY</a>
+                <a href="brochure.html" class="nav-link">BROCHURE</a>
+                <a href="contact.html" class="nav-link active">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <!-- HERO -->
+        <section class="contact-hero">
+            <div class="hero-bg">
+                <img src="https://placehold.co/1920x1080/080808/333333?text=Modern+Bangalore+Architecture" alt="Modern Architecture">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="contact-breadcrumb">
+                    <div class="breadcrumb-container">
+                        <a href="index.html">HOME</a> <span class="divider">/</span> 
+                        <span class="current">CONTACT</span>
+                    </div>
+                </div>
+                <span class="hero-label">GET IN TOUCH</span>
+                <h1>LET'S BUILD<br>WITH<br>PRECISION.</h1>
+                <p>Have a project, product requirement or architectural application in mind? Talk to the ALUMINI PLAZA team about the right solution for your space.</p>
+                <div class="hero-actions">
+                    <a href="#enquiry-form" class="btn btn-primary">REQUEST A QUOTE &darr;</a>
+                    <a href="#ecosystem" class="btn btn-secondary">EXPLORE PRODUCTS &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CONTACT SECTION -->
+        <section class="contact-main" id="enquiry-form">
+            <div class="contact-container">
+                
+                <!-- LEFT: CONTACT INFORMATION -->
+                <div class="contact-info">
+                    <h2>TALK TO<br>OUR TEAM.</h2>
+                    <p class="desc">Whether you're planning a new project, exploring aluminium systems or looking for interior solutions, we're ready to understand your requirements.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="num">01</span>
+                            <h3>CALL</h3>
+                            <p>Speak with our team.</p>
+                            <a href="tel:+91XXXXXXXXXX" class="data-link">+91 XXX XXX XXXX</a>
+                        </div>
+                        <div class="info-card">
+                            <span class="num">02</span>
+                            <h3>EMAIL</h3>
+                            <p>Send your requirements.</p>
+                            <a href="mailto:hello@aluminiplaza.com" class="data-link">hello@aluminiplaza.com</a>
+                        </div>
+                        <div class="info-card">
+                            <span class="num">03</span>
+                            <h3>VISIT</h3>
+                            <p>Bangalore, Karnataka</p>
+                        </div>
+                        <div class="info-card">
+                            <span class="num">04</span>
+                            <h3>HOURS</h3>
+                            <p>Mon &mdash; Sat<br>09:30 AM &mdash; 06:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: ENQUIRY FORM -->
+                <div class="contact-form-wrapper">
+                    <div id="form-content">
+                        <h2>START A<br>CONVERSATION.</h2>
+                        <p class="desc">Tell us what you're looking for and we'll get back to you.</p>
+                        
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>FULL NAME *</label>
+                                    <input type="text" id="fname" required>
+                                    <span class="error-msg">Please enter your full name.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>COMPANY NAME</label>
+                                    <input type="text" id="company">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>PHONE NUMBER *</label>
+                                    <input type="tel" id="phone" required>
+                                    <span class="error-msg">Please enter a valid phone number.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>EMAIL *</label>
+                                    <input type="email" id="email" required>
+                                    <span class="error-msg">Please enter a valid email address.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>PRODUCT / SOLUTION *</label>
+                                    <div class="select-wrapper">
+                                        <select id="product" required>
+                                            <option value="" disabled selected>SELECT A SOLUTION</option>
+                                            <option value="AP EXTRUSIONS">AP EXTRUSIONS</option>
+                                            <option value="AP DECORS & PANELS">AP DECORS & PANELS</option>
+                                            <option value="AP ALUMINIUM">AP ALUMINIUM</option>
+                                            <option value="ALUMINIUM WINDOWS">ALUMINIUM WINDOWS</option>
+                                            <option value="PVC WALL PANELS">PVC WALL PANELS</option>
+                                            <option value="MODULAR KITCHENS">MODULAR KITCHENS</option>
+                                            <option value="MODULAR FURNITURE">MODULAR FURNITURE</option>
+                                            <option value="CUSTOM REQUIREMENT">CUSTOM REQUIREMENT</option>
+                                            <option value="OTHER">OTHER</option>
+                                        </select>
+                                    </div>
+                                    <span class="error-msg">Please select a product or solution.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>PROJECT TYPE</label>
+                                    <div class="select-wrapper">
+                                        <select id="projectType">
+                                            <option value="" disabled selected>SELECT A PROJECT</option>
+                                            <option value="RESIDENTIAL">RESIDENTIAL</option>
+                                            <option value="COMMERCIAL">COMMERCIAL</option>
+                                            <option value="OFFICE">OFFICE</option>
+                                            <option value="RETAIL">RETAIL</option>
+                                            <option value="HOSPITALITY">HOSPITALITY</option>
+                                            <option value="INDUSTRIAL">INDUSTRIAL</option>
+                                            <option value="INTERIOR">INTERIOR</option>
+                                            <option value="OTHER">OTHER</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>REQUIREMENT *</label>
+                                <input type="text" id="requirement" required placeholder="e.g. 500sqft facade, modular kitchen framing">
+                                <span class="error-msg">Please specify your requirement.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>MESSAGE</label>
+                                <textarea id="message" rows="4" placeholder="Any additional details..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">SUBMIT ENQUIRY &rarr;</button>
+                        </form>
+                    </div>
+
+                    <!-- SUCCESS STATE -->
+                    <div id="form-success" class="form-success" style="display: none;">
+                        <div class="success-icon">&#10003;</div>
+                        <h2>THANK YOU.</h2>
+                        <p>Your enquiry has been received.<br>We'll be in touch shortly.</p>
+                        <button onclick="resetForm()" class="btn btn-secondary">SEND ANOTHER ENQUIRY</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION SECTION -->
+        <section class="contact-location">
+            <h2 class="section-title text-center">FIND<br>ALUMINI PLAZA.</h2>
+            <div class="location-wrapper">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <div class="marker"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>BANGALORE</h3>
+                        <p>KARNATAKA</p>
+                        <span>DUMMY MAP &mdash; REPLACE WITH GOOGLE MAP</span>
+                    </div>
+                </div>
+                <div class="location-image">
+                    <img src="https://placehold.co/800x1000/181818/777777?text=Contemporary+Facade" alt="Contemporary Facade">
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CONTACT US -->
+        <section class="contact-why">
+            <div class="why-container">
+                <div class="why-text">
+                    <h2>MORE THAN<br>A PRODUCT.</h2>
+                    <p>Every requirement begins with a conversation. From aluminium systems and architectural profiles to interior surfaces and modular solutions, we help you explore the right direction for your application.</p>
+                </div>
+                <div class="why-points">
+                    <div class="point">
+                        <h3>UNDERSTAND</h3>
+                        <p>We start with your requirement.</p>
+                    </div>
+                    <div class="point">
+                        <h3>EXPLORE</h3>
+                        <p>We identify the appropriate solution.</p>
+                    </div>
+                    <div class="point">
+                        <h3>BUILD</h3>
+                        <p>We move toward execution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT ECOSYSTEM -->
+        <section class="contact-ecosystem" id="ecosystem">
+            <h2 class="section-title text-center" style="margin-bottom: 4rem;">EXPLORE OUR<br>SOLUTIONS.</h2>
+            <div class="eco-grid">
+                <a href="products/ap-extrusions.html" class="eco-card">
+                    <span class="num">01</span>
+                    <div class="eco-img"><img src="https://placehold.co/800x600/080808/555555?text=AP+Extrusions" alt="AP Extrusions"></div>
+                    <div class="eco-info">
+                        <h3>AP EXTRUSIONS</h3>
+                        <p>Architectural profiles & systems</p>
+                        <span class="cta">VIEW PRODUCTS &rarr;</span>
+                    </div>
+                </a>
+                <a href="products/ap-decors-panels.html" class="eco-card">
+                    <span class="num">02</span>
+                    <div class="eco-img"><img src="https://placehold.co/800x600/181818/777777?text=AP+Decors+%26+Panels" alt="AP Decors & Panels"></div>
+                    <div class="eco-info">
+                        <h3>AP DECORS & PANELS</h3>
+                        <p>Surfaces & interior solutions</p>
+                        <span class="cta">VIEW PRODUCTS &rarr;</span>
+                    </div>
+                </a>
+                <a href="products/ap-aluminium.html" class="eco-card">
+                    <span class="num">03</span>
+                    <div class="eco-img"><img src="https://placehold.co/800x600/222222/999999?text=AP+Aluminium" alt="AP Aluminium"></div>
+                    <div class="eco-info">
+                        <h3>AP ALUMINIUM</h3>
+                        <p>Materials & components</p>
+                        <span class="cta">VIEW PRODUCTS &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="contact-cta">
+            <div class="cta-bg">
+                <img src="https://placehold.co/1920x800/080808/333333?text=Technical+Architecture" alt="Technical Architecture">
+                <div class="cta-overlay"></div>
+            </div>
+            <div class="cta-content">
+                <h2>HAVE A<br>PROJECT IN MIND?</h2>
+                <p>Let's discuss your requirements and explore the right solution together.</p>
+                <div class="hero-actions" style="justify-content:center;">
+                    <button onclick="document.getElementById('fname').focus(); window.scrollTo({top: document.getElementById('enquiry-form').offsetTop, behavior: 'smooth'});" class="btn btn-primary">REQUEST A QUOTE</button>
+                    <a href="#ecosystem" class="btn btn-secondary">EXPLORE PRODUCTS</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (Placeholder for integration, reusing global styles if exist) -->
+    <footer style="padding: 4rem; text-align: center; background: #080808; border-top: 1px solid #222; color: #666; font-family: 'Inter', sans-serif;">
+        <p>&copy; 2024 Alumini Plaza. All Rights Reserved.</p>
+    </footer>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- FORM & ANIMATION LOGIC -->
+    <script>
+        // FORM VALIDATION & SUBMISSION
+        const form = document.getElementById('contact-form');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let isValid = true;
+            
+            // Validate required fields
+            const requiredFields = form.querySelectorAll('[required]');
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.parentElement.classList.add('has-error');
+                } else {
+                    field.parentElement.classList.remove('has-error');
+                }
+            });
+
+            // Email format validation
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email.value.trim() && !emailRegex.test(email.value)) {
+                isValid = false;
+                email.parentElement.classList.add('has-error');
+            }
+
+            if (isValid) {
+                // Simulate submission
+                submitForm();
+            }
+        });
+
+        // Clear error on input
+        form.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('input', function() {
+                this.parentElement.classList.remove('has-error');
+            });
+            field.addEventListener('change', function() {
+                this.parentElement.classList.remove('has-error');
+            });
+        });
+
+        function submitForm() {
+            // Frontend-only success state
+            document.getElementById('form-content').style.display = 'none';
+            document.getElementById('form-success').style.display = 'flex';
+        }
+
+        function resetForm() {
+            form.reset();
+            document.getElementById('form-success').style.display = 'none';
+            document.getElementById('form-content').style.display = 'block';
+        }
+
+        // GSAP ANIMATIONS
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Contact Info Stagger
+            gsap.from(".info-card", {
+                scrollTrigger: { trigger: ".contact-info", start: "top 80%" },
+                y: 30, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power2.out"
+            });
+
+            // Form reveal
+            gsap.from(".contact-form-wrapper", {
+                scrollTrigger: { trigger: ".contact-form-wrapper", start: "top 80%" },
+                y: 50, opacity: 0, duration: 1, ease: "power2.out"
+            });
+
+            // Location split reveal
+            gsap.from(".map-placeholder", {
+                scrollTrigger: { trigger: ".contact-location", start: "top 75%" },
+                x: -50, opacity: 0, duration: 1, ease: "power2.out"
+            });
+            gsap.from(".location-image", {
+                scrollTrigger: { trigger: ".contact-location", start: "top 75%" },
+                x: 50, opacity: 0, duration: 1, ease: "power2.out"
+            });
+
+            // Why points
+            gsap.from(".why-points .point", {
+                scrollTrigger: { trigger: ".contact-why", start: "top 80%" },
+                y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: "power2.out"
+            });
+
+            // Ecosystem cards
+            gsap.from(".contact-ecosystem .eco-card", {
+                scrollTrigger: { trigger: ".contact-ecosystem", start: "top 80%" },
+                y: 40, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out"
+            });
+        });
+    </script>
+</body>
+</html>

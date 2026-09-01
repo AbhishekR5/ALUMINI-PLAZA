@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumini Plaza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-section">
+            <a href="#" class="logo-link">
+                <!-- Replace src with your actual logo file, e.g. logo.png -->
+                <img src="alumini plaza logo.png" alt="Alumini Plaza Logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-text" style="display: none;">ALUMINI PLAZA</span>
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <div class="dropdown">
+                    <a href="#solutions-showcase" class="nav-link">PRODUCTS <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products/ap-extrusions.html">AP Extrusions</a>
+                        <a href="products/ap-decors-panels.html">AP Decors & Panels</a>
+                        <a href="products/ap-aluminium.html">AP Aluminium</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="gallery.html" class="nav-link">GALLERY</a>
+                <a href="brochure.html" class="nav-link">BROCHURE</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="hero-scroll">
+        <div class="hero-sticky">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>PRECISION<br>SHAPES<br>POSSIBILITY.</h1>
+                    <p class="scroll-indicator">SCROLL</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- NEW SECTION: SOLUTIONS SHOWCASE -->
+    <section class="solution-showcase" id="solutions-showcase">
+        <!-- Backgrounds -->
+        <div class="slider-bgs">
+            <div class="slider-bg bg-1 active">
+                <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="bg1">
+                <div class="bg-overlay"></div>
+            </div>
+            <div class="slider-bg bg-2">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="bg2">
+                <div class="bg-overlay"></div>
+            </div>
+            <div class="slider-bg bg-3">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="bg3">
+                <div class="bg-overlay"></div>
+            </div>
+            <div class="slider-bg bg-4">
+                <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="bg4">
+                <div class="bg-overlay"></div>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <!-- Left Content -->
+            <div class="slider-content-left">
+                <div class="text-group group-1 active">
+                    <span class="top-label">SOLUTION 01</span>
+                    <h2>ALUMINIUM<br>WINDOWS</h2>
+                    <p>Precision-engineered systems for contemporary spaces and modern lifestyles.</p>
+                </div>
+                <div class="text-group group-2">
+                    <span class="top-label">SOLUTION 02</span>
+                    <h2>PVC WALL<br>PANELS</h2>
+                    <p>Refined interior surfaces adding texture and character to everyday architecture.</p>
+                </div>
+                <div class="text-group group-3">
+                    <span class="top-label">SOLUTION 03</span>
+                    <h2>MODULAR<br>KITCHENS</h2>
+                    <p>Functional, aesthetic systems for modern living and intuitive spaces.</p>
+                </div>
+                <div class="text-group group-4">
+                    <span class="top-label">SOLUTION 04</span>
+                    <h2>MODULAR<br>FURNITURE</h2>
+                    <p>Smart, adaptable furniture solutions that elevate your environment.</p>
+                </div>
+            </div>
+
+            <!-- Right Cards Carousel -->
+            <div class="slider-cards-wrapper">
+                <div class="slider-cards-track">
+                    <div class="slider-card card-1 active">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Windows">
+                        <div class="card-info">
+                            <span class="card-line"></span>
+                            <h4>ALUMINIUM WINDOWS</h4>
+                        </div>
+                    </div>
+                    <div class="slider-card card-2">
+                        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Panels">
+                        <div class="card-info">
+                            <span class="card-line"></span>
+                            <h4>PVC WALL PANELS</h4>
+                        </div>
+                    </div>
+                    <div class="slider-card card-3">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kitchens">
+                        <div class="card-info">
+                            <span class="card-line"></span>
+                            <h4>MODULAR KITCHENS</h4>
+                        </div>
+                    </div>
+                    <div class="slider-card card-4">
+                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Furniture">
+                        <div class="card-info">
+                            <span class="card-line"></span>
+                            <h4>MODULAR FURNITURE</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: ABOUT US -->
+    <section class="about-section" id="about-us">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-title">About Company</h2>
+                <p class="about-desc">
+                    ALUMINI PLAZA brings architectural performance and contemporary design together. We specialize in precision aluminium windows, refined interior systems, and modular furniture. Our commitment to quality ensures that every product we deliver meets the highest standards of modern living.
+                </p>
+                <p class="about-desc">
+                    With years of expertise in the industry, we craft spaces that are both functional and visually stunning. From exquisite wall panels to smart kitchen systems, our solutions are designed to elevate your environment and inspire everyday life.
+                </p>
+            </div>
+            <div class="about-visual">
+                <div class="about-shape about-shape--top-left"></div>
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="About Alumini Plaza" loading="lazy">
+                </div>
+                <div class="about-shape about-shape--bottom-right"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        const scrollContainer = document.querySelector('.hero-scroll');
+        const stickyContainer = document.querySelector('.hero-sticky');
+        const canvas = document.getElementById('hero-canvas');
+        const heroContent = document.querySelector('.hero-content');
+        const ctx = canvas.getContext('2d', { alpha: false }); // Optimize for no transparency
+
+        const frameCount = 300;
+        const images = new Array(frameCount);
+        const imageStatus = new Array(frameCount).fill('unloaded'); // unloaded, loading, loaded, failed
+
+        let targetFrame = 0;
+        let renderedFrame = -1;
+        let ticking = false;
+
+        // Image Smoothing
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+
+        // High-DPI and Resize Handling
+        function resizeCanvas() {
+            const rect = stickyContainer.getBoundingClientRect();
+            const dpr = Math.min(window.devicePixelRatio || 1, 2); // Cap DPR at 2 for performance
+
+            // CSS Dimensions
+            canvas.style.width = `${rect.width}px`;
+            canvas.style.height = `${rect.height}px`;
+
+            // Internal Dimensions
+            canvas.width = rect.width * dpr;
+            canvas.height = rect.height * dpr;
+
+            // Normalize coordinate system to use CSS pixels
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+            // Maintain smoothing setting after resize (reset by changing dimensions)
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
+
+            // Re-render current frame after resize
+            renderedFrame = -1;
+            renderFrame(targetFrame);
+        }
+
+        // True Cover Rendering
+        function drawCover(img) {
+            const canvasRect = stickyContainer.getBoundingClientRect();
+            const canvasRatio = canvasRect.width / canvasRect.height;
+            const imageRatio = img.naturalWidth / img.naturalHeight;
+
+            let sourceX = 0, sourceY = 0;
+            let sourceWidth = img.naturalWidth;
+            let sourceHeight = img.naturalHeight;
+
+            if (imageRatio > canvasRatio) {
+                // Image is wider than canvas - crop sides
+                sourceWidth = img.naturalHeight * canvasRatio;
+                sourceX = (img.naturalWidth - sourceWidth) / 2;
+            } else {
+                // Image is taller than canvas - crop top/bottom
+                sourceHeight = img.naturalWidth / canvasRatio;
+                sourceY = (img.naturalHeight - sourceHeight) / 2;
+            }
+
+            ctx.clearRect(0, 0, canvasRect.width, canvasRect.height);
+            ctx.drawImage(
+                img,
+                sourceX, sourceY, sourceWidth, sourceHeight,
+                0, 0, canvasRect.width, canvasRect.height
+            );
+        }
+
+        // Render Frame with Fallback
+        function renderFrame(index) {
+            if (imageStatus[index] === 'loaded') {
+                drawCover(images[index]);
+                renderedFrame = index;
+            } else {
+                // Fallback to nearest loaded frame
+                let offset = 1;
+                while (index - offset >= 0 || index + offset < frameCount) {
+                    if (index - offset >= 0 && imageStatus[index - offset] === 'loaded') {
+                        drawCover(images[index - offset]);
+                        break; // Don't update renderedFrame so it retries the target frame later
+                    }
+                    if (index + offset < frameCount && imageStatus[index + offset] === 'loaded') {
+                        drawCover(images[index + offset]);
+                        break;
+                    }
+                    offset++;
+                }
+            }
+        }
+
+        // Scroll Logic
+        function calculateTargetFrame() {
+            const rect = scrollContainer.getBoundingClientRect();
+            const header = document.querySelector('.site-header');
+            const headerHeight = header ? header.offsetHeight : 0;
+
+            // effectiveScroll is distance from top of scrollContainer to the sticky boundary
+            const effectiveScroll = Math.max(0, -rect.top + headerHeight);
+            const effectiveMax = scrollContainer.offsetHeight - window.innerHeight;
+
+            let scrollFraction = effectiveScroll / effectiveMax;
+            scrollFraction = Math.max(0, Math.min(1, scrollFraction));
+
+            targetFrame = Math.round(scrollFraction * (frameCount - 1));
+        }
+
+        window.addEventListener('scroll', () => {
+            calculateTargetFrame();
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (targetFrame !== renderedFrame) {
+                        renderFrame(targetFrame);
+                    }
+                    if (heroContent) {
+                        // Fade out completely by frame 50
+                        const opacity = Math.max(0, 1 - (targetFrame / 50));
+                        heroContent.style.opacity = opacity;
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+
+            // Trigger progressive loading based on scroll position
+            loadSurroundingFrames(targetFrame);
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+
+        // Image Loading Logic
+        function loadImage(index) {
+            if (index < 0 || index >= frameCount || imageStatus[index] !== 'unloaded') {
+                return;
+            }
+
+            imageStatus[index] = 'loading';
+            const img = new Image();
+            img.decoding = 'async'; // Async decoding
+
+            const frameNum = (index + 1).toString().padStart(3, '0');
+            img.src = `ezgif-alumini plaza2-jpg/ezgif-frame-${frameNum}.jpg`;
+
+            img.onload = () => {
+                imageStatus[index] = 'loaded';
+                images[index] = img;
+
+                // If this is the frame we're waiting for, render it
+                if (index === targetFrame && index !== renderedFrame) {
+                    window.requestAnimationFrame(() => {
+                        renderFrame(targetFrame);
+                    });
+                }
+            };
+
+            img.onerror = () => {
+                imageStatus[index] = 'failed';
+            };
+        }
+
+        function loadSurroundingFrames(currentIndex) {
+            // Priority 1: Current frame
+            loadImage(currentIndex);
+
+            // Priority 2: Next 20 frames (predictive)
+            for (let i = 1; i <= 20; i++) {
+                loadImage(currentIndex + i);
+            }
+
+            // Priority 3: Previous 10 frames
+            for (let i = 1; i <= 10; i++) {
+                loadImage(currentIndex - i);
+            }
+
+            // Progressive: Load subsequent blocks loosely
+            for (let i = 21; i <= 40; i++) {
+                // Set timeout to avoid blocking main thread with too many requests instantly
+                setTimeout(() => loadImage(currentIndex + i), 100);
+            }
+        }
+
+        // Initialization
+        function init() {
+            // Remove previous body height interference
+            document.body.style.height = '';
+
+            scrollContainer.style.position = 'relative';
+            scrollContainer.style.height = '400vh'; // The length of the scroll animation
+            scrollContainer.style.zIndex = '1';
+
+            const header = document.querySelector('.site-header');
+            const headerHeight = header ? header.offsetHeight : 0;
+
+            stickyContainer.style.top = `${headerHeight}px`;
+            stickyContainer.style.height = `calc(100vh - ${headerHeight}px)`;
+            stickyContainer.style.position = 'sticky';
+            stickyContainer.style.overflow = 'hidden';
+            stickyContainer.style.zIndex = '2';
+
+            canvas.style.display = 'block';
+            canvas.style.zIndex = '2';
+
+            // Ensure header stays on top
+            if (header) {
+                header.style.position = 'sticky';
+                header.style.top = '0';
+                header.style.zIndex = '100';
+            }
+
+            // Initial load of first 30 frames immediately
+            for (let i = 0; i < 30; i++) {
+                loadImage(i);
+            }
+
+            resizeCanvas();
+        }
+
+        // Start when ready
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            init();
+        } else {
+            document.addEventListener('DOMContentLoaded', init);
+        }
+    </script>
+
+    <!-- Solutions Showcase Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.querySelector('.slider-cards-track');
+            const bgs = document.querySelectorAll('.slider-bg');
+            const texts = document.querySelectorAll('.text-group');
+            let currentIndex = 0;
+            
+            if(!track || bgs.length === 0) return;
+            const total = bgs.length;
+
+            function nextSlide() {
+                const nextIndex = (currentIndex + 1) % total;
+                
+                // 1. Update Backgrounds (CSS transition handles the crossfade)
+                bgs[currentIndex].classList.remove('active');
+                bgs[nextIndex].classList.add('active');
+                
+                // 2. Update Left Texts (CSS transition handles the fade/slide)
+                texts[currentIndex].classList.remove('active');
+                texts[nextIndex].classList.add('active');
+                
+                // 3. Animate Right Cards
+                // Compute shift based on current card width + 30px flex gap
+                const card = track.children[0];
+                const shift = card.offsetWidth + 30; 
+                
+                gsap.to(track, {
+                    x: -shift,
+                    duration: 2, // 2 second transition as requested
+                    ease: "power2.inOut",
+                    onComplete: () => {
+                        // Loop: Move the first card to the end
+                        track.appendChild(track.children[0]);
+                        // Instantly reset track position so the next card aligns perfectly
+                        gsap.set(track, { x: 0 });
+                    }
+                });
+                
+                currentIndex = nextIndex;
+            }
+
+            // Auto-play every 5 seconds (3s hold + 2s transition)
+            setInterval(nextSlide, 5000);
+        });
+    </script>
+</body>
+
+</html>

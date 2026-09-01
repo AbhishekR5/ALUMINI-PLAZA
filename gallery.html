@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Aluminium Architecture & Interior Projects | Alumini Plaza</title>
+    <meta name="description" content="Explore the ALUMINI PLAZA gallery featuring aluminium windows, architectural applications, panels, interiors, kitchens and furniture solutions.">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="gallery-page-body">
+    <!-- Existing Site Header -->
+    <header class="site-header">
+        <div class="logo-section">
+            <a href="index.html" class="logo-link">
+                <img src="alumini plaza logo.png" alt="Alumini Plaza Logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-text" style="display: none;">ALUMINI PLAZA</span>
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">HOME</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link">PRODUCTS <i class="fas fa-chevron-down"
+                            style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="products/ap-extrusions.html">AP Extrusions</a>
+                        <a href="products/ap-decors-panels.html">AP Decors & Panels</a>
+                        <a href="products/ap-aluminium.html">AP Aluminium</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="gallery.html" class="nav-link active">GALLERY</a>
+                <a href="brochure.html" class="nav-link">BROCHURE</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-page">
+        <!-- SVG Decorative Background -->
+        <div class="gallery-bg-pattern">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="blueprint" width="100" height="100" patternUnits="userSpaceOnUse">
+                        <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(0,0,0,0.03)" stroke-width="1" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#blueprint)" />
+                <circle cx="20%" cy="30%" r="300" fill="none" stroke="rgba(0,0,0,0.02)" stroke-width="1" />
+                <circle cx="80%" cy="70%" r="500" fill="none" stroke="rgba(0,0,0,0.02)" stroke-width="1" />
+                <path d="M 0,200 L 100%,200" fill="none" stroke="rgba(215,25,32,0.1)" stroke-width="1" stroke-dasharray="5,5" />
+            </svg>
+        </div>
+
+        <!-- HERO -->
+        <section class="gallery-hero">
+            <h1>OUR<br>WORKS.</h1>
+            <p>BUILT FOR REAL SPACES.</p>
+            <p class="hero-desc">From architectural aluminium systems to interior applications, explore how materials, profiles and surfaces come together in contemporary environments.</p>
+        </section>
+
+        <!-- FILTERS -->
+        <section class="gallery-filters-section">
+            <div class="filters-container">
+                <div class="filter-scroll-area">
+                    <button class="filter-btn active" data-filter="ALL">ALL</button>
+                    <button class="filter-btn" data-filter="RESIDENTIAL">RESIDENTIAL</button>
+                    <button class="filter-btn" data-filter="COMMERCIAL">COMMERCIAL</button>
+                    <button class="filter-btn" data-filter="ARCHITECTURAL">ARCHITECTURAL</button>
+                    <button class="filter-btn" data-filter="INTERIORS">INTERIORS</button>
+                    <button class="filter-btn" data-filter="WINDOWS">WINDOWS</button>
+                    <button class="filter-btn" data-filter="PANELS">PANELS</button>
+                    <button class="filter-btn" data-filter="KITCHENS">KITCHENS</button>
+                    <button class="filter-btn" data-filter="FURNITURE">FURNITURE</button>
+                </div>
+            </div>
+            <div class="filter-status">
+                <span id="project-counter">SHOWING 08 / 16 PROJECTS</span>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECT (Static container) -->
+        <section class="gallery-featured" id="featured-container" style="display: none;">
+            <!-- Populated via JS -->
+        </section>
+
+        <!-- MASONRY GALLERY -->
+        <section class="gallery-masonry">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Javascript will populate this grid -->
+            </div>
+            
+            <div class="gallery-load-more">
+                <button id="load-more-btn" class="btn btn-primary" onclick="loadMoreProjects()">LOAD MORE</button>
+            </div>
+        </section>
+
+        <!-- PRODUCT ECOSYSTEM -->
+        <section class="gallery-ecosystem">
+            <h2 class="section-title text-center" style="margin-bottom: 4rem;">EXPLORE THE SYSTEMS<br>BEHIND THE WORK.</h2>
+            <div class="eco-grid">
+                <a href="products/ap-extrusions.html" class="eco-card">
+                    <div class="eco-img"><img src="https://placehold.co/800x600/080808/555555?text=AP+Extrusions" alt="AP Extrusions"></div>
+                    <div class="eco-info">
+                        <h3>AP EXTRUSIONS</h3>
+                        <p>Architectural profiles & systems</p>
+                        <span class="cta">VIEW PRODUCTS &rarr;</span>
+                    </div>
+                </a>
+                <a href="products/ap-decors-panels.html" class="eco-card">
+                    <div class="eco-img"><img src="https://placehold.co/800x600/181818/777777?text=AP+Decors+%26+Panels" alt="AP Decors & Panels"></div>
+                    <div class="eco-info">
+                        <h3>AP DECORS & PANELS</h3>
+                        <p>Interior surfaces & panels</p>
+                        <span class="cta">VIEW PRODUCTS &rarr;</span>
+                    </div>
+                </a>
+                <a href="products/ap-aluminium.html" class="eco-card">
+                    <div class="eco-img"><img src="https://placehold.co/800x600/222222/999999?text=AP+Aluminium" alt="AP Aluminium"></div>
+                    <div class="eco-info">
+                        <h3>AP ALUMINIUM</h3>
+                        <p>Materials & components</p>
+                        <span class="cta">VIEW PRODUCTS &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="gallery-cta">
+            <div class="cta-bg">
+                <img src="https://placehold.co/1920x800/080808/333333?text=Architectural+Space" alt="Architectural Space">
+                <div class="cta-overlay"></div>
+            </div>
+            <div class="cta-content">
+                <h2>YOUR PROJECT<br>COULD BE NEXT.</h2>
+                <p>Have a project or application in mind? Let's explore the right aluminium and interior solution together.</p>
+                <div class="hero-actions" style="justify-content:center;">
+                    <a href="contact.html" class="btn btn-primary">REQUEST A QUOTE &rarr;</a>
+                    <a href="contact.html" class="btn btn-secondary">CONTACT US &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (Placeholder for integration, reusing global styles if exist) -->
+    <footer style="padding: 4rem; text-align: center; background: #080808; border-top: 1px solid #222; color: #666; font-family: 'Inter', sans-serif;">
+        <p>&copy; 2024 Alumini Plaza. All Rights Reserved.</p>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="gallery-lightbox" class="gallery-lightbox" aria-modal="true" role="dialog">
+        <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+        
+        <button class="lightbox-prev" onclick="prevProject()" aria-label="Previous Project">&#8592;</button>
+        <button class="lightbox-next" onclick="nextProject()" aria-label="Next Project">&#8594;</button>
+
+        <div class="lightbox-content">
+            <div class="lightbox-image-container">
+                <img id="lb-image" src="" alt="Project Image">
+            </div>
+            <div class="lightbox-info">
+                <div class="lb-header">
+                    <span id="lb-cat" class="lb-category">CATEGORY</span>
+                    <span id="lb-num" class="lb-num">01 / 16</span>
+                </div>
+                <h2 id="lb-title">PROJECT TITLE</h2>
+                <p id="lb-location" class="lb-location"><i class="fas fa-map-marker-alt"></i> Bangalore</p>
+                <p id="lb-desc" class="lb-desc">Description goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- DATA & LOGIC -->
+    <script>
+        // Gallery Data Structure
+        const galleryProjects = [
+            {
+                id: 1, title: "Modern Bangalore Villa", category: "RESIDENTIAL", tags: ["RESIDENTIAL", "WINDOWS"], location: "Bangalore",
+                description: "Demo project showcasing contemporary aluminium window applications and premium residential facades.",
+                image: "https://placehold.co/1200x800/d9d9d9/333333?text=Modern+Villa",
+                spanClass: "span-large-horizontal", featured: true
+            },
+            {
+                id: 2, title: "Premium High-Rise Apartments", category: "RESIDENTIAL", tags: ["RESIDENTIAL", "ARCHITECTURAL"], location: "Bangalore",
+                description: "Extensive application of aluminium balcony railings and structural profiles in a luxury apartment complex.",
+                image: "https://placehold.co/800x1200/e5e5e5/333333?text=Premium+Apartments",
+                spanClass: "span-vertical", featured: false
+            },
+            {
+                id: 3, title: "Contemporary Tech Office", category: "COMMERCIAL", tags: ["COMMERCIAL", "INTERIORS"], location: "Bangalore",
+                description: "Sleek aluminium partition systems dividing modern open-plan office spaces while maintaining natural light.",
+                image: "https://placehold.co/1000x1000/cccccc/333333?text=Tech+Office+Interior",
+                spanClass: "span-square", featured: false
+            },
+            {
+                id: 4, title: "Precision Window Framing", category: "WINDOWS", tags: ["WINDOWS", "RESIDENTIAL"], location: "Bangalore",
+                description: "Close-up detail of casement window systems showcasing tight tolerances and smooth finishes.",
+                image: "https://placehold.co/1200x800/dddddd/333333?text=Window+Detail",
+                spanClass: "span-wide", featured: false
+            },
+            {
+                id: 5, title: "Glass & Aluminium Facade", category: "ARCHITECTURAL", tags: ["COMMERCIAL", "ARCHITECTURAL"], location: "Bangalore",
+                description: "Structural glazing and aluminium louvers protecting a modern commercial facade from tropical sun.",
+                image: "https://placehold.co/800x1200/d5d5d5/333333?text=Glass+Facade",
+                spanClass: "span-vertical", featured: false
+            },
+            {
+                id: 6, title: "Minimalist Modular Kitchen", category: "KITCHENS", tags: ["KITCHENS", "INTERIORS"], location: "Bangalore",
+                description: "Seamless modular kitchen using aluminium edge profiles and specialized cabinet framing.",
+                image: "https://placehold.co/1000x1000/eeeeee/333333?text=Modular+Kitchen",
+                spanClass: "span-square", featured: false
+            },
+            {
+                id: 7, title: "PVC Wall Panel Feature", category: "PANELS", tags: ["PANELS", "INTERIORS"], location: "Bangalore",
+                description: "Warm wood-texture PVC wall panels applied to a contemporary residential living room.",
+                image: "https://placehold.co/1200x800/d0d0d0/333333?text=Wall+Panel+Interior",
+                spanClass: "span-wide", featured: false
+            },
+            {
+                id: 8, title: "Retail Showroom Interior", category: "COMMERCIAL", tags: ["COMMERCIAL", "INTERIORS"], location: "Bangalore",
+                description: "Aluminium ceiling systems and display furniture engineered for a high-end retail environment.",
+                image: "https://placehold.co/800x1200/e0e0e0/333333?text=Retail+Showroom",
+                spanClass: "span-vertical", featured: false
+            },
+            {
+                id: 9, title: "Aluminium Furniture Profiles", category: "FURNITURE", tags: ["FURNITURE", "INTERIORS"], location: "Bangalore",
+                description: "Custom modular wardrobe constructed entirely using ALUMINI PLAZA furniture sections.",
+                image: "https://placehold.co/1000x1000/e8e8e8/333333?text=Modular+Wardrobe",
+                spanClass: "span-square", featured: false
+            },
+            {
+                id: 10, title: "Domal Window System", category: "WINDOWS", tags: ["WINDOWS", "RESIDENTIAL"], location: "Bangalore",
+                description: "Smooth sliding domal window application in an urban apartment balcony.",
+                image: "https://placehold.co/1200x800/d2d2d2/333333?text=Domal+Sliding+Window",
+                spanClass: "span-wide", featured: false
+            },
+            {
+                id: 11, title: "Architectural Louvers", category: "ARCHITECTURAL", tags: ["ARCHITECTURAL", "COMMERCIAL"], location: "Bangalore",
+                description: "Exterior aluminium louver sections providing privacy and solar control to a modern building.",
+                image: "https://placehold.co/800x1200/dbdbdb/333333?text=Architectural+Louvers",
+                spanClass: "span-vertical", featured: false
+            },
+            {
+                id: 12, title: "Commercial Grid Ceiling", category: "PANELS", tags: ["PANELS", "COMMERCIAL"], location: "Bangalore",
+                description: "Exposed aluminium grid with premium ceiling tiles for a corporate environment.",
+                image: "https://placehold.co/1000x1000/d6d6d6/333333?text=Grid+Ceiling",
+                spanClass: "span-square", featured: false
+            },
+            {
+                id: 13, title: "Hospitality Interior", category: "INTERIORS", tags: ["INTERIORS", "COMMERCIAL"], location: "Bangalore",
+                description: "Boutique hotel lobby featuring custom aluminium screens and interior surface panels.",
+                image: "https://placehold.co/1200x800/e3e3e3/333333?text=Hospitality+Lobby",
+                spanClass: "span-wide", featured: false
+            },
+            {
+                id: 14, title: "Extrusion Material Detail", category: "ARCHITECTURAL", tags: ["ARCHITECTURAL", "WINDOWS"], location: "Bangalore",
+                description: "Close-up view of precision aluminium extrusions before structural assembly.",
+                image: "https://placehold.co/800x1200/dfdfdf/333333?text=Extrusion+Detail",
+                spanClass: "span-vertical", featured: false
+            },
+            {
+                id: 15, title: "Urban Residential Facade", category: "RESIDENTIAL", tags: ["RESIDENTIAL", "ARCHITECTURAL"], location: "Bangalore",
+                description: "Combination of aluminium windows, louvers and glass on a compact urban plot.",
+                image: "https://placehold.co/1000x1000/d8d8d8/333333?text=Urban+Facade",
+                spanClass: "span-square", featured: false
+            },
+            {
+                id: 16, title: "Custom Display Units", category: "FURNITURE", tags: ["FURNITURE", "COMMERCIAL"], location: "Bangalore",
+                description: "Bespoke commercial shelving built from square and rectangular aluminium tubes.",
+                image: "https://placehold.co/1200x800/e6e6e6/333333?text=Custom+Shelving",
+                spanClass: "span-wide", featured: false
+            }
+        ];
+
+        // Global State
+        let currentFilter = "ALL";
+        let visibleCount = 8;
+        const INITIAL_LOAD = 8;
+        const LOAD_STEP = 4;
+        let filteredProjects = [...galleryProjects];
+        let currentLightboxIndex = 0;
+
+        // Elements
+        const gridEl = document.getElementById('gallery-grid');
+        const featuredEl = document.getElementById('featured-container');
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        const counterEl = document.getElementById('project-counter');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+
+        function initGallery() {
+            bindFilters();
+            renderGallery();
+        }
+
+        function bindFilters() {
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    // Update active class
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    
+                    // Filter logic
+                    currentFilter = e.target.getAttribute('data-filter');
+                    visibleCount = INITIAL_LOAD; // Reset count
+                    
+                    if (currentFilter === "ALL") {
+                        filteredProjects = [...galleryProjects];
+                    } else {
+                        filteredProjects = galleryProjects.filter(p => p.tags.includes(currentFilter));
+                    }
+                    
+                    // Animate out existing, then render
+                    gsap.to(".gallery-item", {
+                        opacity: 0,
+                        y: 20,
+                        duration: 0.3,
+                        onComplete: () => renderGallery()
+                    });
+                });
+            });
+        }
+
+        function renderGallery() {
+            gridEl.innerHTML = '';
+            featuredEl.innerHTML = '';
+            featuredEl.style.display = 'none';
+
+            // Check if there's a featured project to show at the top (only on ALL)
+            if (currentFilter === "ALL") {
+                const featured = filteredProjects.find(p => p.featured);
+                if (featured) {
+                    featuredEl.style.display = 'block';
+                    featuredEl.innerHTML = `
+                        <div class="featured-project" onclick="openLightbox(${featured.id})">
+                            <img src="${featured.image}" alt="${featured.title}">
+                            <div class="feat-overlay">
+                                <span class="feat-badge">FEATURED WORK</span>
+                                <h2>${featured.title}</h2>
+                                <span class="feat-cta">VIEW PROJECT &rarr;</span>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            // Exclude featured from masonry if on ALL
+            let masonryItems = filteredProjects;
+            if (currentFilter === "ALL") {
+                masonryItems = filteredProjects.filter(p => !p.featured);
+            }
+
+            // Render visible items
+            const itemsToShow = masonryItems.slice(0, visibleCount);
+            
+            itemsToShow.forEach((p, index) => {
+                const numStr = p.id < 10 ? `0${p.id}` : p.id;
+                
+                const itemHTML = `
+                    <div class="gallery-item ${p.spanClass}" onclick="openLightbox(${p.id})">
+                        <img class="gallery-item__image" src="${p.image}" alt="${p.title}" loading="lazy">
+                        <div class="gallery-item__overlay">
+                            <span class="num">${numStr}</span>
+                            <div class="overlay-content">
+                                <span class="cat">${p.category}</span>
+                                <h3>${p.title}</h3>
+                                <p class="loc"><i class="fas fa-map-marker-alt"></i> ${p.location}</p>
+                            </div>
+                            <span class="cta-arrow">VIEW PROJECT &rarr;</span>
+                        </div>
+                    </div>
+                `;
+                gridEl.innerHTML += itemHTML;
+            });
+
+            // Update Counter & Load More
+            const totalStr = filteredProjects.length < 10 ? `0${filteredProjects.length}` : filteredProjects.length;
+            const visStr = itemsToShow.length < 10 ? `0${itemsToShow.length}` : itemsToShow.length;
+            
+            if (currentFilter === "ALL") {
+                // Adjust count if featured is shown separately
+                const trueVis = itemsToShow.length + 1;
+                const tvStr = trueVis < 10 ? `0${trueVis}` : trueVis;
+                counterEl.innerText = `SHOWING ${tvStr} / ${totalStr} PROJECTS`;
+            } else {
+                counterEl.innerText = `SHOWING ${visStr} / ${totalStr} PROJECTS`;
+            }
+
+            if (itemsToShow.length >= masonryItems.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'inline-block';
+            }
+
+            // Animate In
+            gsap.fromTo(".gallery-item", 
+                { opacity: 0, y: 30 }, 
+                { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out", clearProps: "all" }
+            );
+            if(featuredEl.style.display === 'block') {
+                gsap.fromTo(".featured-project", { opacity: 0, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.8, ease: "power2.out"});
+            }
+        }
+
+        function loadMoreProjects() {
+            visibleCount += LOAD_STEP;
+            renderGallery();
+            
+            // Scroll down slightly
+            window.scrollBy({ top: 300, behavior: 'smooth' });
+        }
+
+        // LIGHTBOX LOGIC
+        function openLightbox(id) {
+            const index = filteredProjects.findIndex(p => p.id === id);
+            if (index === -1) return;
+            currentLightboxIndex = index;
+            updateLightboxUI();
+            
+            document.getElementById('gallery-lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Add keyboard listener
+            document.addEventListener('keydown', handleKeyboard);
+        }
+
+        function closeLightbox() {
+            document.getElementById('gallery-lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            document.removeEventListener('keydown', handleKeyboard);
+        }
+
+        function nextProject() {
+            if (currentLightboxIndex < filteredProjects.length - 1) {
+                currentLightboxIndex++;
+            } else {
+                currentLightboxIndex = 0; // wrap around
+            }
+            updateLightboxUI();
+        }
+
+        function prevProject() {
+            if (currentLightboxIndex > 0) {
+                currentLightboxIndex--;
+            } else {
+                currentLightboxIndex = filteredProjects.length - 1;
+            }
+            updateLightboxUI();
+        }
+
+        function updateLightboxUI() {
+            const p = filteredProjects[currentLightboxIndex];
+            const total = filteredProjects.length;
+            const numStr = currentLightboxIndex + 1 < 10 ? `0${currentLightboxIndex + 1}` : currentLightboxIndex + 1;
+            const totStr = total < 10 ? `0${total}` : total;
+
+            document.getElementById('lb-image').src = p.image;
+            document.getElementById('lb-cat').innerText = p.category;
+            document.getElementById('lb-num').innerText = `${numStr} / ${totStr}`;
+            document.getElementById('lb-title').innerText = p.title;
+            document.getElementById('lb-location').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${p.location}`;
+            document.getElementById('lb-desc').innerText = p.description;
+        }
+
+        function handleKeyboard(e) {
+            if (e.key === "Escape") closeLightbox();
+            if (e.key === "ArrowRight") nextProject();
+            if (e.key === "ArrowLeft") prevProject();
+        }
+
+        // Initialize on load
+        document.addEventListener("DOMContentLoaded", () => {
+            initGallery();
+        });
+
+    </script>
+</body>
+</html>
